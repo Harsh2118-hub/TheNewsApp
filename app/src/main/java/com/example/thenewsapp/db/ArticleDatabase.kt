@@ -15,7 +15,7 @@ import com.example.thenewsapp.models.Article
 @TypeConverters(Converters::class)
 abstract class ArticleDatabase : RoomDatabase() {
 
-    abstract fun getArticleDAO():RoomDatabase
+    abstract fun getArticleDAO():ArticleDAO
 
     companion object {
         @Volatile
